@@ -14,6 +14,7 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 body {
   margin: 0;
 }
@@ -32,6 +33,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
   width: 100%;
+  font-family: 'Roboto Slab';
   /* Center and scale the image nicely */
 }
 

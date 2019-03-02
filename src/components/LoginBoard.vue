@@ -1,7 +1,7 @@
 <template>
 <form>
   <div class="form-group">
-    <label for="exampleInputEmail1">{{default_user}}</label>
+    <label for="exampleInputEmail1">User Name</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
@@ -13,15 +13,14 @@
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" class="btn btn-primary" @click.prevent="submit">Submit</button>
+  <!-- <button type="submit" class="btn btn-primary" @click.prevent="submit">Submit</button> -->
+  <router-link to="profile" class="btn  btn-block btn-success btn-lg">Submit</router-link>
 </form>
 </template>
 
 <script>
+// import {router} from ''
 export default {
-    data() {
-        return {default_user: "default parameter"}
-    },
   methods: {
     submit() {
       // Submit user information
